@@ -102,7 +102,7 @@ Strong success criteria let the LLM loop independently. Weak criteria ("make it 
 
 From within Claude Code, first add the marketplace:
 ```
-/plugin marketplace add forrestchang/andrej-karpathy-skills
+/plugin marketplace add Ice-K/andrej-karpathy-skills
 ```
 
 Then install the plugin:
