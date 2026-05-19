@@ -72,4 +72,4 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 
 - 禁止使用魔法值，使用静态常量、常量类、枚举
 - Controller 中禁止编写业务逻辑，将业务逻辑下沉到service层
-- 你写的代码要加注释，符合javadoc规范
+- 你写的代码要加注释，符合javadoc规范，注释使用中文
