@@ -70,6 +70,16 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 
 **项目中编写代码需要遵循的特定规范**
 
-- 禁止使用魔法值，使用静态常量、常量类、枚举
-- Controller 中禁止编写业务逻辑，将业务逻辑下沉到service层
-- 你写的代码要加注释，符合javadoc规范，注释使用中文
+- **强制** 禁止使用魔法值。有限的业务状态/类型优先使用枚举，物理常量和协议字符串使用常量。
+- **强制** 禁止在 Controller 中写业务逻辑，业务逻辑下沉到 Service / ServiceImpl。
+- **强制** 使用 Objects、CollectionUtils 等现有工具类判断对象和集合，新增依赖前先确认 Maven 中是否已存在依赖。
+- **强制** 项目中如果有 Swagger、Knife4j，Controller、DTO、VO 上要使用注解。
+- **强制** 代码中要加注释，符合 Google 的 Javadoc 标准。
+- **强制** 使用 Lombok 简化代码。
+- **推荐** 数据校验优先使用统一校验和断言能力，并在全局异常处理中统一返回。
+
+## 兜底规则
+
+**项目编码应遵循的兜底规则**
+
+- 必须严格遵循 CLAUDE.md，不要为了快速实现采用临时方案。修改前先搜索同类实现并给出方案；实现后按规范自检清单报告。若规范实现需要更大改动，先询问我，不允许自行降级实现质量。
