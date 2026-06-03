@@ -74,7 +74,7 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 - **强制** 禁止在 Controller 中写业务逻辑，业务逻辑下沉到 Service / ServiceImpl。
 - **强制** 使用 Objects、CollectionUtils 等现有工具类判断对象和集合，新增依赖前先确认 Maven 中是否已存在依赖。
 - **强制** 项目中如果有 Swagger、Knife4j，Controller、DTO、VO 上要使用注解。
-- **强制** 代码中要加注释，符合 Google 的 Javadoc 标准。
+- **强制** 代码中要加注释，符合 Google 的 Javadoc 标准，核心逻辑也要加注释，注释使用中文。
 - **强制** 使用 Lombok 简化代码。
 - **推荐** 数据校验优先使用统一校验和断言能力，并在全局异常处理中统一返回。
 
